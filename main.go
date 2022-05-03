@@ -9,12 +9,14 @@ import (
 	"strings"
 )
 
+type Attrs map[string]string
+
 // references:
 // stream-parsing example: https://eli.thegreenplace.net/2019/faster-xml-stream-processing-in-go/
 // having maps in structs: https://stackoverflow.com/a/34972468/605846
 type EADNode struct {
 	Name     string
-	Attrs    map[string]string
+	Attrs    Attrs
 	Value    string
 	Children []*EADNode
 }
@@ -83,10 +85,19 @@ func main() {
 		switch el := tok.(type) {
 		case xml.StartElement:
 			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
+
+			// create new node
+			var en *EADNode
+			en = new(EADNode)
+			en.Name = el.Name.Local
+			en.Attrs = make(Attrs)
+
 			indent += 4
 			for _, attr := range el.Attr {
+				en.Attrs[attr.Name.Local] = attr.Value
 				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), attr.Name.Local, attr.Value)
 			}
+
 		case xml.CharData:
 			str := strings.TrimSpace(string([]byte(el)))
 			if len(str) != 0 {
