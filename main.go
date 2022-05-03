@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"encoding/xml"
 	"fmt"
 	"io"
@@ -15,6 +16,11 @@ type Attr map[string]string
 // references:
 // stream-parsing example: https://eli.thegreenplace.net/2019/faster-xml-stream-processing-in-go/
 // having maps in structs: https://stackoverflow.com/a/34972468/605846
+// Golang stack implementation
+//   https://yourbasic.org/golang/implement-stack/
+//   https://go.dev/play/p/uiYfmQHR1b9
+//   https://go.dev/play/p/VkWkOFadSYh
+
 type EADNode struct {
 	Name     string
 	Attr     Attr
@@ -162,63 +168,11 @@ func main() {
 		}
 
 	}
+	jdoc, err := json.MarshalIndent(eadState.Tree, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(string(jdoc))
 
 }
-
-// Golang stack implementation
-// https://yourbasic.org/golang/implement-stack/
-// https://go.dev/play/p/uiYfmQHR1b9
-// https://go.dev/play/p/VkWkOFadSYh
-
-// 	package main
-
-// import (
-// 	"encoding/json"
-// 	"encoding/xml"
-// 	"fmt"
-// 	"io/ioutil"
-// )
-
-// type EAD struct {
-// 	Head     string  `xml:"head" json:"head"`
-// 	Contents []Mixed `xml:",any" json:"contents"`
-// }
-
-// type Mixed struct {
-// 	Type  string
-// 	Value interface{}
-// }
-
-// func main() {
-// 	bytes, err := ioutil.ReadFile("example.xml")
-// 	if err != nil {
-// 		panic(err)
-// 	}
-
-// 	var doc EAD
-// 	if err := xml.Unmarshal([]byte(bytes), &doc); err != nil {
-// 		panic(err)
-// 	}
-
-// 	jdoc, err := json.MarshalIndent(doc, "", "  ")
-// 	if err != nil {
-// 		panic(err)
-// 	}
-
-// 	fmt.Println(string(jdoc))
-// }
-
-// func (m *Mixed) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
-// 	switch start.Name.Local {
-// 	case "head", "p", "list":
-// 		var e string
-// 		if err := d.DecodeElement(&e, &start); err != nil {
-// 			return err
-// 		}
-// 		m.Value = e
-// 		m.Type = start.Name.Local
-// 	default:
-// 		return fmt.Errorf("unknown element: %s", start)
-// 	}
-// 	return nil
-// }
