@@ -80,21 +80,21 @@ func main() {
 		// https://stackoverflow.com/a/33139049/605846
 		// https://www.socketloop.com/tutorials/golang-read-xml-elements-data-with-xml-chardata-example
 		// https://code-maven.com/slides/golang/parse-html-extract-tags-and-attributes
-		switch element := tok.(type) {
+		switch el := tok.(type) {
 		case xml.StartElement:
-			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), element.Name.Local)
+			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 			indent += 4
-			for _, attr := range element.Attr {
+			for _, attr := range el.Attr {
 				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), attr.Name.Local, attr.Value)
 			}
 		case xml.CharData:
-			str := strings.TrimSpace(string([]byte(element)))
+			str := strings.TrimSpace(string([]byte(el)))
 			if len(str) != 0 {
 				fmt.Printf("%sCharData --> %s\n", strings.Repeat(" ", indent), str)
 			}
 		case xml.EndElement:
 			indent -= 4
-			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), element.Name.Local)
+			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 		}
 
 	}
