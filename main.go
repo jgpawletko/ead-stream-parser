@@ -141,6 +141,8 @@ func main() {
 		case xml.EndElement:
 			indent -= 4
 			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
+
+			eadState.Stack.Pop()
 		}
 
 	}
