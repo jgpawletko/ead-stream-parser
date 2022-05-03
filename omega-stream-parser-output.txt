@@ -1,8 +1,8 @@
 StartElement --> ead
-    @xmlns = urn:isbn:1-931666-22-9
-    @xlink = http://www.w3.org/1999/xlink
-    @xsi = http://www.w3.org/2001/XMLSchema-instance
     @schemaLocation = urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd
+    @xlink = http://www.w3.org/1999/xlink
+    @xmlns = urn:isbn:1-931666-22-9
+    @xsi = http://www.w3.org/2001/XMLSchema-instance
     StartElement --> eadheader
         @countryencoding = iso3166-1
         @dateencoding = iso8601
@@ -105,8 +105,8 @@ StartElement --> ead
             StartElement --> langusage
                 CharData --> Finding aid written in
                 StartElement --> language
-                    @langcode = eng
                     @encodinganalog = 546
+                    @langcode = eng
                     CharData --> English
                 EndElement --> language
                 CharData --> .
@@ -479,9 +479,9 @@ StartElement --> ead
                 StartElement --> archref
                     StartElement --> extref
                         @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                        @show = new
                         @title = Sally Belfrage
                         @type = simple
-                        @show = new
                         CharData --> The Sally Belfrage
             Papers (TAM 189)
                     EndElement --> extref
@@ -515,8 +515,8 @@ StartElement --> ead
                     CharData --> March 2021
                 EndElement --> date
                 StartElement --> list
-                    @type = deflist
                     @numeration = arabic
+                    @type = deflist
                     StartElement --> listhead
                         StartElement --> head01
                             CharData --> Abbreviation
@@ -843,8 +843,8 @@ StartElement --> ead
                         CharData --> . It has a
                         StartElement --> title
                             @render = bold
-                            @type = book
                             @source = DACS
+                            @type = book
                             StartElement --> emph
                                 @render = bold
                                 CharData --> bold
@@ -1050,9 +1050,9 @@ StartElement --> ead
                         StartElement --> archref
                             StartElement --> extref
                                 @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                                @show = new
                                 @title = Sally Belfrage
                                 @type = simple
-                                @show = new
                                 CharData --> The Sally Belfrage
                 Papers (TAM 189)
                             EndElement --> extref
@@ -1088,8 +1088,8 @@ StartElement --> ead
                             CharData --> March 2021
                         EndElement --> date
                         StartElement --> list
-                            @type = deflist
                             @numeration = arabic
+                            @type = deflist
                             StartElement --> listhead
                                 StartElement --> head01
                                     CharData --> Abbreviation
@@ -1453,8 +1453,8 @@ StartElement --> ead
                             CharData --> . It has a
                             StartElement --> title
                                 @render = bold
-                                @type = book
                                 @source = DACS
+                                @type = book
                                 StartElement --> emph
                                     @render = bold
                                     CharData --> bold
@@ -1665,9 +1665,9 @@ StartElement --> ead
                             StartElement --> archref
                                 StartElement --> extref
                                     @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                                    @show = new
                                     @title = Sally Belfrage
                                     @type = simple
-                                    @show = new
                                     CharData --> The Sally
                   Belfrage Papers (TAM 189)
                                 EndElement --> extref
@@ -1703,8 +1703,8 @@ StartElement --> ead
                                 CharData --> March 2021
                             EndElement --> date
                             StartElement --> list
-                                @type = deflist
                                 @numeration = arabic
+                                @type = deflist
                                 StartElement --> listhead
                                     StartElement --> head01
                                         CharData --> Abbreviation
@@ -2062,8 +2062,8 @@ StartElement --> ead
                                 CharData --> .It has a
                                 StartElement --> title
                                     @render = bold
-                                    @type = book
                                     @source = DACS
+                                    @type = book
                                     StartElement --> emph
                                         @render = bold
                                         CharData --> bold
@@ -2275,9 +2275,9 @@ StartElement --> ead
                                 StartElement --> archref
                                     StartElement --> extref
                                         @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                                        @show = new
                                         @title = Sally Belfrage
                                         @type = simple
-                                        @show = new
                                         CharData --> The Sally
                     Belfrage Papers (TAM 189)
                                     EndElement --> extref
@@ -2313,8 +2313,8 @@ StartElement --> ead
                                     CharData --> March 2021
                                 EndElement --> date
                                 StartElement --> list
-                                    @type = deflist
                                     @numeration = arabic
+                                    @type = deflist
                                     StartElement --> listhead
                                         StartElement --> head01
                                             CharData --> Abbreviation
@@ -2678,8 +2678,8 @@ StartElement --> ead
                                     CharData --> . It has a
                                     StartElement --> title
                                         @render = bold
-                                        @type = book
                                         @source = DACS
+                                        @type = book
                                         StartElement --> emph
                                             @render = bold
                                             CharData --> bold
@@ -2891,9 +2891,9 @@ StartElement --> ead
                                     StartElement --> archref
                                         StartElement --> extref
                                             @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                                            @show = new
                                             @title = Sally Belfrage
                                             @type = simple
-                                            @show = new
                                             CharData --> The Sally
                       Belfrage Papers (TAM 189)
                                         EndElement --> extref
@@ -2929,8 +2929,8 @@ StartElement --> ead
                                         CharData --> March 2021
                                     EndElement --> date
                                     StartElement --> list
-                                        @type = deflist
                                         @numeration = arabic
+                                        @type = deflist
                                         StartElement --> listhead
                                             StartElement --> head01
                                                 CharData --> Abbreviation
@@ -3291,8 +3291,8 @@ StartElement --> ead
                                         CharData --> . It has a
                                         StartElement --> title
                                             @render = bold
-                                            @type = book
                                             @source = DACS
+                                            @type = book
                                             CharData --> title
                                         EndElement --> title
                                         CharData --> in it.
@@ -3500,9 +3500,9 @@ StartElement --> ead
                                         StartElement --> archref
                                             StartElement --> extref
                                                 @href = http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/
+                                                @show = new
                                                 @title = Sally Belfrage
                                                 @type = simple
-                                                @show = new
                                                 CharData --> The Sally
                         Belfrage Papers (TAM 189)
                                             EndElement --> extref
@@ -3538,8 +3538,8 @@ StartElement --> ead
                                             CharData --> March 2021
                                         EndElement --> date
                                         StartElement --> list
-                                            @type = deflist
                                             @numeration = arabic
+                                            @type = deflist
                                             StartElement --> listhead
                                                 StartElement --> head01
                                                     CharData --> Abbreviation
