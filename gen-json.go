@@ -92,7 +92,6 @@ func main() {
 
 	eadState := new(EADState)
 
-	indent := 0
 	for {
 		token, err := d.Token()
 		if token == nil || err == io.EOF {
@@ -108,12 +107,7 @@ func main() {
 		// https://code-maven.com/slides/golang/parse-html-extract-tags-and-attributes
 		switch el := token.(type) {
 		case xml.StartElement:
-			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
-
 			en := NewEADNode(el)
-
-			indent += 4
-
 			// sort map keys to make display order deterministic
 			// https://go.dev/blog/maps
 			// https://pkg.go.dev/sort
@@ -122,12 +116,6 @@ func main() {
 				keys = append(keys, k)
 			}
 			sort.Strings(keys)
-
-			// output attribute values
-			for _, k := range keys {
-				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), k, en.Attr[k])
-			}
-
 			eadState.Stack.Push(en)
 
 		case xml.CharData:
@@ -140,14 +128,9 @@ func main() {
 					log.Fatalf("In CharData: Stack should not be empty! %s, %s", el, str)
 				}
 				en.Value = str
-
-				fmt.Printf("%sCharData --> %s\n", strings.Repeat(" ", indent), en.Value)
 			}
 
 		case xml.EndElement:
-			indent -= 4
-			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
-
 			en := eadState.Stack.Pop()
 			if en == nil {
 				log.Fatalf("In EndElement: Stack should not be empty! %s", el)
@@ -174,5 +157,4 @@ func main() {
 	}
 
 	fmt.Println(string(jdoc))
-
 }
