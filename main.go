@@ -68,6 +68,8 @@ func main() {
 
 	d := xml.NewDecoder(f)
 
+	eadState := new(EADState)
+
 	indent := 0
 	for {
 		token, err := d.Token()
@@ -86,6 +88,7 @@ func main() {
 		case xml.StartElement:
 			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 
+			// TODO: add a contructor for new EADNodes, e.g., NewEADNode(e xml.Element)
 			// create new node
 			var en *EADNode
 			en = new(EADNode)
