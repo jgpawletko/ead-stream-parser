@@ -6,17 +6,18 @@ import (
 	"io"
 	"log"
 	"os"
+	"sort"
 	"strings"
 )
 
-type Attrs map[string]string
+type Attr map[string]string
 
 // references:
 // stream-parsing example: https://eli.thegreenplace.net/2019/faster-xml-stream-processing-in-go/
 // having maps in structs: https://stackoverflow.com/a/34972468/605846
 type EADNode struct {
 	Name     string
-	Attrs    Attrs
+	Attr     Attr
 	Value    string
 	Children []*EADNode
 }
@@ -59,6 +60,21 @@ type EADState struct {
 	Errors []error
 }
 
+func NewEADNode(el xml.StartElement) *EADNode {
+	// create new node
+	var en *EADNode
+	en = new(EADNode)
+	en.Name = el.Name.Local
+	// TODO: add size to make? len(el.Attr)
+	en.Attr = make(Attr)
+
+	for _, attr := range el.Attr {
+		en.Attr[attr.Name.Local] = attr.Value
+	}
+
+	return en
+}
+
 func main() {
 	f, err := os.Open(os.Args[1])
 	if err != nil {
@@ -68,7 +84,7 @@ func main() {
 
 	d := xml.NewDecoder(f)
 
-	eadState := new(EADState)
+	//	eadState := new(EADState)
 
 	indent := 0
 	for {
@@ -88,18 +104,22 @@ func main() {
 		case xml.StartElement:
 			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 
-			// TODO: add a contructor for new EADNodes, e.g., NewEADNode(e xml.Element)
-			// create new node
-			var en *EADNode
-			en = new(EADNode)
-			en.Name = el.Name.Local
-			// TODO: add size to make? len(el.Attr)
-			en.Attrs = make(Attrs)
+			en := NewEADNode(el)
 
 			indent += 4
-			for _, attr := range el.Attr {
-				en.Attrs[attr.Name.Local] = attr.Value
-				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), attr.Name.Local, attr.Value)
+
+			// sort map keys to make display order deterministic
+			// https://go.dev/blog/maps
+			// https://pkg.go.dev/sort
+			var keys []string
+			for k := range en.Attr {
+				keys = append(keys, k)
+			}
+			sort.Strings(keys)
+
+			// output attribute values
+			for _, k := range keys {
+				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), k, en.Attr[k])
 			}
 
 		case xml.CharData:
