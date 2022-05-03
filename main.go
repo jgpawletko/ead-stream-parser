@@ -27,12 +27,12 @@ type Stack struct {
 }
 
 // TODO: could generalize by using "any" for the param and return type
-func (s *Stack) Peek() (*EADNode, error) {
+func (s *Stack) Peek() *EADNode {
 	idx := len(s.S) - 1
 	if idx < 0 {
-		return nil, fmt.Errorf("Stack is empty")
+		return nil
 	}
-	return s.S[idx], nil
+	return s.S[idx]
 }
 
 func (s *Stack) Push(val *EADNode) {
@@ -40,14 +40,14 @@ func (s *Stack) Push(val *EADNode) {
 	return
 }
 
-func (s *Stack) Pop() (*EADNode, error) {
+func (s *Stack) Pop() *EADNode {
 	idx := len(s.S) - 1
 	if idx < 0 {
-		return nil, fmt.Errorf("Stack is empty")
+		return nil
 	}
 	retval := s.S[idx]
 	s.S = s.S[:idx]
-	return retval, nil
+	return retval
 }
 
 func (s *Stack) Len() int {
@@ -129,9 +129,9 @@ func main() {
 
 			// see if there is actually any data...
 			if len(str) != 0 {
-				en, err := eadState.Stack.Peek()
-				if err != nil {
-					log.Fatalf("Stack error: %s, %s, %s", el, str, err)
+				en := eadState.Stack.Peek()
+				if en == nil {
+					log.Fatalf("Stack should not be empty! %s, %s, %s", el, str)
 				}
 				en.Value = str
 
