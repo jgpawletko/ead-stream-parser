@@ -129,13 +129,13 @@ func main() {
 
 			// see if there is actually any data...
 			if len(str) != 0 {
-				fmt.Printf("%sCharData --> %s\n", strings.Repeat(" ", indent), str)
-
 				en, err := eadState.Stack.Peek()
 				if err != nil {
 					log.Fatalf("Stack error: %s, %s, %s", el, str, err)
 				}
 				en.Value = str
+
+				fmt.Printf("%sCharData --> %s\n", strings.Repeat(" ", indent), en.Value)
 			}
 
 		case xml.EndElement:
