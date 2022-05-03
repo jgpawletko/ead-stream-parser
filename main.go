@@ -18,6 +18,40 @@ type EADNode struct {
 	Children []*EADNode
 }
 
+type Stack struct {
+	S []*EADNode
+}
+
+
+// TODO: could generalize by using "any" for the param and return type
+func (s *Stack) Peek() (*EADNode, error) {
+	idx := len(s.S) - 1
+	if idx < 0 {
+		return nil, fmt.Errorf("Stack is empty")
+	}
+	return s.S[idx], nil
+}
+
+func (s *Stack) Push(val *EADNode) {
+	s.S = append(s.S, val)
+	return
+}
+
+func (s *Stack) Pop() (*EADNode, error) {
+	idx := len(s.S) - 1
+	if idx < 0 {
+		return nil, fmt.Errorf("Stack is empty")
+	}
+	retval := s.S[idx]
+	s.S = s.S[:idx]
+	return retval, nil
+}
+
+func (s *Stack) Len() int {
+	return len(s.S)
+}
+
+
 func main() {
 	f, err := os.Open(os.Args[1])
 	if err != nil {
