@@ -143,6 +143,7 @@ func main() {
 			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 
 			eadState.Stack.Pop()
+			// fmt.Printf("depth: %d\n", eadState.Stack.Len())
 		}
 
 	}
