@@ -126,9 +126,18 @@ func main() {
 
 		case xml.CharData:
 			str := strings.TrimSpace(string([]byte(el)))
+
+			// see if there is actually any data...
 			if len(str) != 0 {
 				fmt.Printf("%sCharData --> %s\n", strings.Repeat(" ", indent), str)
+
+				en, err := eadState.Stack.Peek()
+				if err != nil {
+					log.Fatalf("Stack error: %s, %s, %s", el, str, err)
+				}
+				en.Value = str
 			}
+
 		case xml.EndElement:
 			indent -= 4
 			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
