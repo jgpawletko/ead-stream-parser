@@ -22,10 +22,10 @@ type Attr map[string]string
 //   https://go.dev/play/p/VkWkOFadSYh
 
 type EADNode struct {
-	Name     string
-	Attr     Attr
-	Value    string
-	Children []*EADNode
+	Name     string     `json:"name,omitempty"`
+	Attr     Attr       `json:"attr,omitempty"`
+	Value    string     `json:"value,omitempty"`
+	Children []*EADNode `json:"children,omitempty"`
 }
 
 type Stack struct {
