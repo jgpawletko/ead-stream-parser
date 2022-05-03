@@ -122,6 +122,8 @@ func main() {
 				fmt.Printf("%s@%s = %s\n", strings.Repeat(" ", indent), k, en.Attr[k])
 			}
 
+			eadState.Stack.Push(en)
+
 		case xml.CharData:
 			str := strings.TrimSpace(string([]byte(el)))
 			if len(str) != 0 {
