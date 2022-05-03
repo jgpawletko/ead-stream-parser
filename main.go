@@ -10,7 +10,13 @@ import (
 )
 
 // references:
-// https://eli.thegreenplace.net/2019/faster-xml-stream-processing-in-go/
+// stream-parsing example: https://eli.thegreenplace.net/2019/faster-xml-stream-processing-in-go/
+// having maps in structs: https://stackoverflow.com/a/34972468/605846
+type EADNode struct {
+	Name     string
+	Attrs    map[string]string
+	Children []*EADNode
+}
 
 func main() {
 	f, err := os.Open(os.Args[1])
@@ -56,13 +62,10 @@ func main() {
 
 }
 
-
 // Golang stack implementation
 // https://yourbasic.org/golang/implement-stack/
 // https://go.dev/play/p/uiYfmQHR1b9
 // https://go.dev/play/p/VkWkOFadSYh
-
-
 
 // 	package main
 
