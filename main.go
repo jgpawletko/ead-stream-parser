@@ -56,7 +56,7 @@ func (s *Stack) Len() int {
 
 type EADState struct {
 	Stack  Stack
-	Tree   []*EADNode
+	Tree   *EADNode
 	Errors []error
 }
 
@@ -149,11 +149,13 @@ func main() {
 
 			// get the parent node
 			// if the parent node is nil, it means we're processing the root element, and
-			//   there is nothing to do
+			//   so we can assign the root element to the EADState.Tree member.
 			// if the parent node is NOT nil, then append the just-popped EADNode to the
 			//   parent node's Children slice
 			parent := eadState.Stack.Peek()
-			if parent != nil {
+			if parent == nil {
+				eadState.Tree = en
+			} else {
 				parent.Children = append(parent.Children, en)
 			}
 			// fmt.Printf("depth: %d\n", eadState.Stack.Len())
