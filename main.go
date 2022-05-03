@@ -84,7 +84,7 @@ func main() {
 
 	d := xml.NewDecoder(f)
 
-	//	eadState := new(EADState)
+	eadState := new(EADState)
 
 	indent := 0
 	for {
