@@ -22,7 +22,6 @@ type Stack struct {
 	S []*EADNode
 }
 
-
 // TODO: could generalize by using "any" for the param and return type
 func (s *Stack) Peek() (*EADNode, error) {
 	idx := len(s.S) - 1
@@ -51,6 +50,11 @@ func (s *Stack) Len() int {
 	return len(s.S)
 }
 
+type EADState struct {
+	Stack  Stack
+	Tree   []*EADNode
+	Errors []error
+}
 
 func main() {
 	f, err := os.Open(os.Args[1])
