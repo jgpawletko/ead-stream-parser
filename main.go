@@ -70,8 +70,8 @@ func main() {
 
 	indent := 0
 	for {
-		tok, err := d.Token()
-		if tok == nil || err == io.EOF {
+		token, err := d.Token()
+		if token == nil || err == io.EOF {
 			break
 		} else if err != nil {
 			log.Fatalf("Error decoding token: %s", err)
@@ -82,7 +82,7 @@ func main() {
 		// https://stackoverflow.com/a/33139049/605846
 		// https://www.socketloop.com/tutorials/golang-read-xml-elements-data-with-xml-chardata-example
 		// https://code-maven.com/slides/golang/parse-html-extract-tags-and-attributes
-		switch el := tok.(type) {
+		switch el := token.(type) {
 		case xml.StartElement:
 			fmt.Printf("%sStartElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 
