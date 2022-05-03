@@ -131,7 +131,7 @@ func main() {
 			if len(str) != 0 {
 				en := eadState.Stack.Peek()
 				if en == nil {
-					log.Fatalf("Stack should not be empty! %s, %s, %s", el, str)
+					log.Fatalf("In CharData: Stack should not be empty! %s, %s", el, str)
 				}
 				en.Value = str
 
@@ -142,7 +142,20 @@ func main() {
 			indent -= 4
 			fmt.Printf("%sEndElement --> %s\n", strings.Repeat(" ", indent), el.Name.Local)
 
-			eadState.Stack.Pop()
+			en := eadState.Stack.Pop()
+			if en == nil {
+				log.Fatalf("In EndElement: Stack should not be empty! %s", el)
+			}
+
+			// get the parent node
+			// if the parent node is nil, it means we're processing the root element, and
+			//   there is nothing to do
+			// if the parent node is NOT nil, then append the just-popped EADNode to the
+			//   parent node's Children slice
+			parent := eadState.Stack.Peek()
+			if parent != nil {
+				parent.Children = append(parent.Children, en)
+			}
 			// fmt.Printf("depth: %d\n", eadState.Stack.Len())
 		}
 
