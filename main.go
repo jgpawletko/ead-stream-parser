@@ -15,6 +15,7 @@ import (
 type EADNode struct {
 	Name     string
 	Attrs    map[string]string
+	Value    string
 	Children []*EADNode
 }
 
