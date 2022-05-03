@@ -90,6 +90,7 @@ func main() {
 			var en *EADNode
 			en = new(EADNode)
 			en.Name = el.Name.Local
+			// TODO: add size to make? len(el.Attr)
 			en.Attrs = make(Attrs)
 
 			indent += 4
