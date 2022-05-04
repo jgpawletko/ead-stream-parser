@@ -7,9 +7,34 @@ import (
 	"io"
 	"log"
 	"os"
+	"regexp"
 	"sort"
 	"strings"
 )
+
+// FilteredString provides a centralized string cleanup mechanism
+type FilteredString string
+
+func (s FilteredString) String() string {
+	return cleanupWhitespace(string(s))
+}
+
+func (s FilteredString) MarshalJSON() ([]byte, error) {
+	return json.Marshal(s.String())
+}
+
+func cleanupWhitespace(s string) string {
+	// find occurrences of one or more consecutive \r, \n, \t, " "
+	re := regexp.MustCompile(`\r+|\n+|\t+|( )+`)
+	// replace occurences with a single space
+	result := re.ReplaceAllString(s, " ")
+	// run again in case previous operation resulted in
+	// consecutive spaces
+	result = re.ReplaceAllString(result, " ")
+	// clean off any leading/trailing whitespace
+	result = strings.TrimSpace(result)
+	return result
+}
 
 type Attr map[string]string
 
@@ -22,10 +47,10 @@ type Attr map[string]string
 //   https://go.dev/play/p/VkWkOFadSYh
 
 type EADNode struct {
-	Name     string     `json:"name,omitempty"`
-	Attr     Attr       `json:"attr,omitempty"`
-	Value    string     `json:"value,omitempty"`
-	Children []*EADNode `json:"children,omitempty"`
+	Name     string         `json:"name,omitempty"`
+	Attr     Attr           `json:"attr,omitempty"`
+	Value    FilteredString `json:"value,omitempty"`
+	Children []*EADNode     `json:"children,omitempty"`
 }
 
 type Stack struct {
@@ -127,7 +152,7 @@ func main() {
 				if en == nil {
 					log.Fatalf("In CharData: Stack should not be empty! %s, %s", el, str)
 				}
-				en.Value = str
+				en.Value = FilteredString(str)
 			}
 
 		case xml.EndElement:
