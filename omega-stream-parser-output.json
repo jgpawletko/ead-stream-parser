@@ -39,7 +39,7 @@
                 },
                 {
                   "name": "titleproper",
-                  "value": "Rule\n          Them All",
+                  "value": "Rule Them All",
                   "children": [
                     {
                       "name": "emph",
@@ -163,7 +163,7 @@
               "children": [
                 {
                   "name": "date",
-                  "value": "2021-04-14 18:28:52\n          -0400"
+                  "value": "2021-04-14 18:28:52 -0400"
                 }
               ]
             },
@@ -333,7 +333,7 @@
                   "attr": {
                     "altrender": "carrier"
                   },
-                  "value": "1\n          manuscript box, and 1 flat file folder",
+                  "value": "1 manuscript box, and 1 flat file folder",
                   "children": [
                     {
                       "name": "emph",
@@ -356,7 +356,7 @@
                         "id": "aspace_2234224",
                         "label": "dimensions"
                       },
-                      "value": "24\" x\n          24\""
+                      "value": "24\" x 24\""
                     }
                   ]
                 }
@@ -446,7 +446,7 @@
               "children": [
                 {
                   "name": "emph",
-                  "value": "English is the\n          language"
+                  "value": "English is the language"
                 }
               ]
             }
@@ -477,7 +477,7 @@
                   "children": [
                     {
                       "name": "head",
-                      "value": "The following chronology provides a backdrop for the Board of Higher Education of\n            the City of New York cases included within this collection:"
+                      "value": "The following chronology provides a backdrop for the Board of Higher Education of the City of New York cases included within this collection:"
                     },
                     {
                       "name": "chronitem",
@@ -491,7 +491,7 @@
                           "children": [
                             {
                               "name": "event",
-                              "value": "which provided in substance that \"no\n                person shall be appointed to or retained in the public service nor in any public\n                educational institution who becomes a member of any organization which advocates the\n                overthrow of government by force or violence, or by any unlawful means (L. 1939, Ch.\n                547).\"",
+                              "value": "which provided in substance that \"no person shall be appointed to or retained in the public service nor in any public educational institution who becomes a member of any organization which advocates the overthrow of government by force or violence, or by any unlawful means (L. 1939, Ch. 547).\"",
                               "children": [
                                 {
                                   "name": "emph",
@@ -590,7 +590,7 @@
                         },
                         {
                           "name": "title",
-                          "value": "Journal\n              of Archival Organization"
+                          "value": "Journal of Archival Organization"
                         }
                       ]
                     }
@@ -813,7 +813,7 @@
                         "title": "Sally Belfrage",
                         "type": "simple"
                       },
-                      "value": "The Sally Belfrage\n            Papers (TAM 189)"
+                      "value": "The Sally Belfrage Papers (TAM 189)"
                     }
                   ]
                 },
@@ -842,7 +842,7 @@
                   "children": [
                     {
                       "name": "p",
-                      "value": "No doubt the estate has exerted a tremendous influence on the development of my\n            character. One may walk for an hour without glimpsing another soul, which has taught me\n            to love tranquility."
+                      "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                     }
                   ]
                 },
@@ -1023,14 +1023,14 @@
             },
             {
               "name": "p",
-              "value": "This is the Related Materials note. Those using the collection may also be interested in\n        P132, held in this repository, which includes photographs of Pemberly, Darcy's estate and\n        childhood home. In an April 1795 letter to his friend, Charles Bingley, Darcy wrote",
+              "value": "This is the Related Materials note. Those using the collection may also be interested in P132, held in this repository, which includes photographs of Pemberly, Darcy's estate and childhood home. In an April 1795 letter to his friend, Charles Bingley, Darcy wrote",
               "children": [
                 {
                   "name": "blockquote",
                   "children": [
                     {
                       "name": "p",
-                      "value": "No doubt the estate has exerted a tremendous influence on the development of my\n            character. One may walk for an hour without glimpsing another soul, which has taught me\n            to love tranquility."
+                      "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                     }
                   ]
                 },
@@ -1042,7 +1042,7 @@
                       "attr": {
                         "href": "http://dlib.nyu.edu/findingaids/html/tamwag/tam_189/"
                       },
-                      "value": "The Sally\n            Belfrage Papers (TAM 189)"
+                      "value": "The Sally Belfrage Papers (TAM 189)"
                     }
                   ]
                 }
@@ -1156,7 +1156,7 @@
             },
             {
               "name": "bibref",
-              "value": "Construction Industry.\n        Interim Report by the New York State Organized Crime Task Force. Ithaca, NY: ILR Press, New\n        York State School of Industrial and Labor Relations, Cornell University, 1988.",
+              "value": "Construction Industry. Interim Report by the New York State Organized Crime Task Force. Ithaca, NY: ILR Press, New York State School of Industrial and Labor Relations, Cornell University, 1988.",
               "children": [
                 {
                   "name": "name",
@@ -1166,7 +1166,7 @@
             },
             {
               "name": "bibref",
-              "value": ". Ronald Goldstock, Director, New York State\n        Organized Crime Task Force. December 1989.",
+              "value": ". Ronald Goldstock, Director, New York State Organized Crime Task Force. December 1989.",
               "children": [
                 {
                   "name": "persname",
@@ -1285,7 +1285,7 @@
                         },
                         {
                           "name": "persname",
-                          "value": "Megan\n              O'Shea"
+                          "value": "Megan O'Shea"
                         },
                         {
                           "name": "name",
@@ -1316,7 +1316,7 @@
                           "attr": {
                             "source": "naf"
                           },
-                          "value": "80 Washington Square East\n              Galleries"
+                          "value": "80 Washington Square East Galleries"
                         }
                       ]
                     },
@@ -1331,7 +1331,7 @@
                           "attr": {
                             "source": "local"
                           },
-                          "value": "Blaustein\n            Family"
+                          "value": "Blaustein Family"
                         }
                       ]
                     },
@@ -1346,7 +1346,7 @@
                           "attr": {
                             "source": "naf"
                           },
-                          "value": "Aaron,\n            Florence"
+                          "value": "Aaron, Florence"
                         }
                       ]
                     },
@@ -1361,14 +1361,14 @@
                           "attr": {
                             "altrender": "materialtype spaceoccupied"
                           },
-                          "value": "23 Linear\n              Feet"
+                          "value": "23 Linear Feet"
                         },
                         {
                           "name": "extent",
                           "attr": {
                             "altrender": "carrier"
                           },
-                          "value": "in 24 record cartons, 1 manuscript box, and 1\n              flat file folder"
+                          "value": "in 24 record cartons, 1 manuscript box, and 1 flat file folder"
                         },
                         {
                           "name": "physfacet",
@@ -1376,7 +1376,7 @@
                         },
                         {
                           "name": "dimensions",
-                          "value": "24\" x\n              24\""
+                          "value": "24\" x 24\""
                         }
                       ]
                     },
@@ -1427,14 +1427,14 @@
                       "attr": {
                         "id": "aspace_8ec8f4ba4cc227c264b552803da8dd5b"
                       },
-                      "value": "Level 2 This is the Materials\n            Specific Details."
+                      "value": "Level 2 This is the Materials Specific Details."
                     },
                     {
                       "name": "physloc",
                       "attr": {
                         "id": "aspace_ad1c900356662423adac4e02c50f167e"
                       },
-                      "value": "Level 2 This is the Physical\n            Location note."
+                      "value": "Level 2 This is the Physical Location note."
                     },
                     {
                       "name": "physloc",
@@ -1760,13 +1760,13 @@
                                 "title": "Sally Belfrage",
                                 "type": "simple"
                               },
-                              "value": "The Sally Belfrage\n                Papers (TAM 189)"
+                              "value": "The Sally Belfrage Papers (TAM 189)"
                             }
                           ]
                         },
                         {
                           "name": "bibref",
-                          "value": ". Port-au-Prince,\n              1865.",
+                          "value": ". Port-au-Prince, 1865.",
                           "children": [
                             {
                               "name": "emph",
@@ -1789,7 +1789,7 @@
                           "children": [
                             {
                               "name": "p",
-                              "value": "No doubt the estate has exerted a tremendous influence on the development of my\n                character. One may walk for an hour without glimpsing another soul, which has taught\n                me to love tranquility."
+                              "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                             }
                           ]
                         },
@@ -2181,7 +2181,7 @@
                           "children": [
                             {
                               "name": "physloc",
-                              "value": "Box\n              152"
+                              "value": "Box 152"
                             }
                           ]
                         }
@@ -2326,7 +2326,7 @@
                             },
                             {
                               "name": "persname",
-                              "value": "Megan\n                O'Shea"
+                              "value": "Megan O'Shea"
                             },
                             {
                               "name": "name",
@@ -2358,7 +2358,7 @@
                                 "rules": "dacs",
                                 "source": "naf"
                               },
-                              "value": "9 to 5, National\n                Association of Working Women (U.S.)"
+                              "value": "9 to 5, National Association of Working Women (U.S.)"
                             }
                           ]
                         },
@@ -2389,7 +2389,7 @@
                                 "rules": "dacs",
                                 "source": "local"
                               },
-                              "value": "Adams, B.\n                O."
+                              "value": "Adams, B. O."
                             }
                           ]
                         },
@@ -2404,18 +2404,18 @@
                               "attr": {
                                 "altrender": "materialtype spaceoccupied"
                               },
-                              "value": "12 Linear\n                Feet"
+                              "value": "12 Linear Feet"
                             },
                             {
                               "name": "extent",
                               "attr": {
                                 "altrender": "carrier"
                               },
-                              "value": "in 24 record cartons, 1 manuscript box, and\n                1 flat file folder"
+                              "value": "in 24 record cartons, 1 manuscript box, and 1 flat file folder"
                             },
                             {
                               "name": "physfacet",
-                              "value": "Hopefully perfectly this is\n                correct"
+                              "value": "Hopefully perfectly this is correct"
                             },
                             {
                               "name": "dimensions",
@@ -2470,7 +2470,7 @@
                           "attr": {
                             "id": "aspace_90c738fbc387b6372a896966a814da87"
                           },
-                          "value": "Level 3 This is the Materials\n              Specific Details note."
+                          "value": "Level 3 This is the Materials Specific Details note."
                         },
                         {
                           "name": "physdesc",
@@ -2485,7 +2485,7 @@
                           "attr": {
                             "id": "aspace_afd9ea8072f07c5f9bcce1d4a37d1b69"
                           },
-                          "value": "Level 3 This is the Physical\n              Location note."
+                          "value": "Level 3 This is the Physical Location note."
                         },
                         {
                           "name": "physloc",
@@ -2811,13 +2811,13 @@
                                     "title": "Sally Belfrage",
                                     "type": "simple"
                                   },
-                                  "value": "The Sally\n                  Belfrage Papers (TAM 189)"
+                                  "value": "The Sally Belfrage Papers (TAM 189)"
                                 }
                               ]
                             },
                             {
                               "name": "bibref",
-                              "value": ". Port-au-Prince,\n                1865.",
+                              "value": ". Port-au-Prince, 1865.",
                               "children": [
                                 {
                                   "name": "emph",
@@ -2840,7 +2840,7 @@
                               "children": [
                                 {
                                   "name": "p",
-                                  "value": "No doubt the estate has exerted a tremendous influence on the development of my\n                  character. One may walk for an hour without glimpsing another soul, which has\n                  taught me to love tranquility."
+                                  "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                                 }
                               ]
                             },
@@ -3232,7 +3232,7 @@
                               "children": [
                                 {
                                   "name": "physloc",
-                                  "value": "Box\n                152"
+                                  "value": "Box 152"
                                 }
                               ]
                             }
@@ -3359,7 +3359,7 @@
                                 },
                                 {
                                   "name": "persname",
-                                  "value": "Megan\n                  O'Shea"
+                                  "value": "Megan O'Shea"
                                 },
                                 {
                                   "name": "name",
@@ -3390,7 +3390,7 @@
                                   "attr": {
                                     "source": "naf"
                                   },
-                                  "value": "Yivo Institute for Jewish\n                  Research"
+                                  "value": "Yivo Institute for Jewish Research"
                                 }
                               ]
                             },
@@ -3406,7 +3406,7 @@
                                     "rules": "dacs",
                                     "source": "local"
                                   },
-                                  "value": "Pinsof\n                  family"
+                                  "value": "Pinsof family"
                                 }
                               ]
                             },
@@ -3421,7 +3421,7 @@
                                   "attr": {
                                     "source": "naf"
                                   },
-                                  "value": "Zwillinger,\n                Rhonda"
+                                  "value": "Zwillinger, Rhonda"
                                 }
                               ]
                             },
@@ -3436,14 +3436,14 @@
                                   "attr": {
                                     "altrender": "materialtype spaceoccupied"
                                   },
-                                  "value": "2 Linear\n                  Feet"
+                                  "value": "2 Linear Feet"
                                 },
                                 {
                                   "name": "extent",
                                   "attr": {
                                     "altrender": "carrier"
                                   },
-                                  "value": "in 24 record cartons, 1 manuscript box,\n                  and 1 flat file folder"
+                                  "value": "in 24 record cartons, 1 manuscript box, and 1 flat file folder"
                                 },
                                 {
                                   "name": "physfacet",
@@ -3451,7 +3451,7 @@
                                 },
                                 {
                                   "name": "dimensions",
-                                  "value": "1'\n                  x 27\""
+                                  "value": "1' x 27\""
                                 }
                               ]
                             },
@@ -3468,7 +3468,7 @@
                               "attr": {
                                 "id": "aspace_3d9720d0bacf6d3d15ac94b5ce37e689"
                               },
-                              "value": "in\n                it.",
+                              "value": "in it.",
                               "children": [
                                 {
                                   "name": "emph",
@@ -3506,7 +3506,7 @@
                               "attr": {
                                 "id": "aspace_bb766f2f7183c55973b1b8097f44002f"
                               },
-                              "value": "Level 4 This is the\n                Materials Specific Details note."
+                              "value": "Level 4 This is the Materials Specific Details note."
                             },
                             {
                               "name": "physdesc",
@@ -3521,7 +3521,7 @@
                               "attr": {
                                 "id": "aspace_b6521902953af6f8eb7c33b079f834df"
                               },
-                              "value": "Level 4 This is the Physical\n                Location note."
+                              "value": "Level 4 This is the Physical Location note."
                             },
                             {
                               "name": "physloc",
@@ -3847,13 +3847,13 @@
                                         "title": "Sally Belfrage",
                                         "type": "simple"
                                       },
-                                      "value": "The Sally\n                    Belfrage Papers (TAM 189)"
+                                      "value": "The Sally Belfrage Papers (TAM 189)"
                                     }
                                   ]
                                 },
                                 {
                                   "name": "bibref",
-                                  "value": ". Port-au-Prince,\n                  1865.",
+                                  "value": ". Port-au-Prince, 1865.",
                                   "children": [
                                     {
                                       "name": "emph",
@@ -3876,7 +3876,7 @@
                                   "children": [
                                     {
                                       "name": "p",
-                                      "value": "No doubt the estate has exerted a tremendous influence on the development of my\n                    character. One may walk for an hour without glimpsing another soul, which has\n                    taught me to love tranquility."
+                                      "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                                     }
                                   ]
                                 },
@@ -4015,7 +4015,7 @@
                                   "attr": {
                                     "source": "lcsh"
                                   },
-                                  "value": "Irish American women -- History -- 19th\n                century."
+                                  "value": "Irish American women -- History -- 19th century."
                                 }
                               ]
                             },
@@ -4073,7 +4073,7 @@
                                   "attr": {
                                     "source": "lcsh"
                                   },
-                                  "value": "Irish American women -- History -- 19th\n                century."
+                                  "value": "Irish American women -- History -- 19th century."
                                 }
                               ]
                             },
@@ -4131,7 +4131,7 @@
                                   "attr": {
                                     "source": "lcsh"
                                   },
-                                  "value": "Irish American women -- History -- 19th\n                century."
+                                  "value": "Irish American women -- History -- 19th century."
                                 }
                               ]
                             }
@@ -4268,7 +4268,7 @@
                                   "children": [
                                     {
                                       "name": "physloc",
-                                      "value": "Box\n                  152"
+                                      "value": "Box 152"
                                     }
                                   ]
                                 }
@@ -4325,7 +4325,7 @@
                               "attr": {
                                 "source": "lcsh"
                               },
-                              "value": "Boston (Mass.) -- Intellectual life -- 20th\n                century."
+                              "value": "Boston (Mass.) -- Intellectual life -- 20th century."
                             },
                             {
                               "name": "subject",
@@ -4395,7 +4395,7 @@
                                     },
                                     {
                                       "name": "persname",
-                                      "value": "Megan\n                    O'Shea"
+                                      "value": "Megan O'Shea"
                                     },
                                     {
                                       "name": "name",
@@ -4430,7 +4430,7 @@
                                         "rules": "aacr",
                                         "source": "naf"
                                       },
-                                      "value": "World Trade Center\n                    (New York, N.Y.)"
+                                      "value": "World Trade Center (New York, N.Y.)"
                                     }
                                   ]
                                 },
@@ -4445,7 +4445,7 @@
                                       "attr": {
                                         "source": "local"
                                       },
-                                      "value": "Draper\n                  family"
+                                      "value": "Draper family"
                                     }
                                   ]
                                 },
@@ -4460,7 +4460,7 @@
                                       "attr": {
                                         "source": "naf"
                                       },
-                                      "value": "Yonge, Charlotte Mary,\n                    1823-1901"
+                                      "value": "Yonge, Charlotte Mary, 1823-1901"
                                     }
                                   ]
                                 },
@@ -4475,18 +4475,18 @@
                                       "attr": {
                                         "altrender": "materialtype spaceoccupied"
                                       },
-                                      "value": "5 Linear\n                    Feet"
+                                      "value": "5 Linear Feet"
                                     },
                                     {
                                       "name": "extent",
                                       "attr": {
                                         "altrender": "carrier"
                                       },
-                                      "value": "in 24 record cartons, 1 manuscript box,\n                    and 1 flat file folder"
+                                      "value": "in 24 record cartons, 1 manuscript box, and 1 flat file folder"
                                     },
                                     {
                                       "name": "physfacet",
-                                      "value": "This is still a\n                    test"
+                                      "value": "This is still a test"
                                     },
                                     {
                                       "name": "dimensions",
@@ -4507,7 +4507,7 @@
                                   "attr": {
                                     "id": "aspace_249a3fdd9a6970f7261ef73ed5a82c33"
                                   },
-                                  "value": "in\n                  it.",
+                                  "value": "in it.",
                                   "children": [
                                     {
                                       "name": "emph",
@@ -4545,7 +4545,7 @@
                                   "attr": {
                                     "id": "aspace_ed591019ee2e31b0ed6321587349ae04"
                                   },
-                                  "value": "Level 5 This is the\n                  Materials Specific Details note."
+                                  "value": "Level 5 This is the Materials Specific Details note."
                                 },
                                 {
                                   "name": "physdesc",
@@ -4560,7 +4560,7 @@
                                   "attr": {
                                     "id": "aspace_a56d52abb5da53cd39c1a7594080266b"
                                   },
-                                  "value": "Level 5 This is the Physical\n                  Location note."
+                                  "value": "Level 5 This is the Physical Location note."
                                 },
                                 {
                                   "name": "physloc",
@@ -4886,13 +4886,13 @@
                                             "title": "Sally Belfrage",
                                             "type": "simple"
                                           },
-                                          "value": "The Sally\n                      Belfrage Papers (TAM 189)"
+                                          "value": "The Sally Belfrage Papers (TAM 189)"
                                         }
                                       ]
                                     },
                                     {
                                       "name": "bibref",
-                                      "value": ". Port-au-Prince,\n                    1865.",
+                                      "value": ". Port-au-Prince, 1865.",
                                       "children": [
                                         {
                                           "name": "emph",
@@ -4915,7 +4915,7 @@
                                       "children": [
                                         {
                                           "name": "p",
-                                          "value": "No doubt the estate has exerted a tremendous influence on the development of\n                      my character. One may walk for an hour without glimpsing another soul, which\n                      has taught me to love tranquility."
+                                          "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                                         }
                                       ]
                                     },
@@ -5054,7 +5054,7 @@
                                       "attr": {
                                         "source": "lcsh"
                                       },
-                                      "value": "Irish American women -- History -- 19th\n                  century."
+                                      "value": "Irish American women -- History -- 19th century."
                                     }
                                   ]
                                 },
@@ -5112,7 +5112,7 @@
                                       "attr": {
                                         "source": "lcsh"
                                       },
-                                      "value": "Irish American women -- History -- 19th\n                  century."
+                                      "value": "Irish American women -- History -- 19th century."
                                     }
                                   ]
                                 },
@@ -5170,7 +5170,7 @@
                                       "attr": {
                                         "source": "lcsh"
                                       },
-                                      "value": "Irish American women -- History -- 19th\n                  century."
+                                      "value": "Irish American women -- History -- 19th century."
                                     }
                                   ]
                                 }
@@ -5307,7 +5307,7 @@
                                       "children": [
                                         {
                                           "name": "physloc",
-                                          "value": "Box\n                    152"
+                                          "value": "Box 152"
                                         }
                                       ]
                                     }
@@ -5364,7 +5364,7 @@
                                   "attr": {
                                     "source": "lcsh"
                                   },
-                                  "value": "Boston (Mass.) -- Intellectual life -- 20th\n                  century."
+                                  "value": "Boston (Mass.) -- Intellectual life -- 20th century."
                                 },
                                 {
                                   "name": "subject",
@@ -5434,7 +5434,7 @@
                                         },
                                         {
                                           "name": "persname",
-                                          "value": "Megan\n                      O'Shea"
+                                          "value": "Megan O'Shea"
                                         },
                                         {
                                           "name": "name",
@@ -5465,7 +5465,7 @@
                                           "attr": {
                                             "source": "naf"
                                           },
-                                          "value": "Workers' Party of\n                      Ireland"
+                                          "value": "Workers' Party of Ireland"
                                         }
                                       ]
                                     },
@@ -5480,7 +5480,7 @@
                                           "attr": {
                                             "source": "local"
                                           },
-                                          "value": "Blaustein\n                    Family"
+                                          "value": "Blaustein Family"
                                         }
                                       ]
                                     },
@@ -5495,7 +5495,7 @@
                                           "attr": {
                                             "source": "naf"
                                           },
-                                          "value": "Alum, Rolando\n                    A."
+                                          "value": "Alum, Rolando A."
                                         }
                                       ]
                                     },
@@ -5510,18 +5510,18 @@
                                           "attr": {
                                             "altrender": "materialtype spaceoccupied"
                                           },
-                                          "value": "3\n                      Linear Feet"
+                                          "value": "3 Linear Feet"
                                         },
                                         {
                                           "name": "extent",
                                           "attr": {
                                             "altrender": "carrier"
                                           },
-                                          "value": "in 24 record cartons, 1\n                      manuscript box, and 1 flat file folder"
+                                          "value": "in 24 record cartons, 1 manuscript box, and 1 flat file folder"
                                         },
                                         {
                                           "name": "physfacet",
-                                          "value": "This is still a\n                      test"
+                                          "value": "This is still a test"
                                         },
                                         {
                                           "name": "dimensions",
@@ -5571,7 +5571,7 @@
                                       "attr": {
                                         "id": "aspace_d2c9a336620616b40793ea4442da9568"
                                       },
-                                      "value": "Level 6 This is the\n                    Materials Specific Details note."
+                                      "value": "Level 6 This is the Materials Specific Details note."
                                     },
                                     {
                                       "name": "physdesc",
@@ -5579,14 +5579,14 @@
                                         "id": "aspace_f0aab22480ef05ebd2cac7af9d04f144",
                                         "label": "Physical Description"
                                       },
-                                      "value": "Level 6 This is the Physical Description\n                    note."
+                                      "value": "Level 6 This is the Physical Description note."
                                     },
                                     {
                                       "name": "physloc",
                                       "attr": {
                                         "id": "aspace_3a86739f4caef7657334864aa471d4bc"
                                       },
-                                      "value": "Level 6 This is the Physical\n                    Location note."
+                                      "value": "Level 6 This is the Physical Location note."
                                     },
                                     {
                                       "name": "physloc",
@@ -5912,13 +5912,13 @@
                                                 "title": "Sally Belfrage",
                                                 "type": "simple"
                                               },
-                                              "value": "The Sally\n                        Belfrage Papers (TAM 189)"
+                                              "value": "The Sally Belfrage Papers (TAM 189)"
                                             }
                                           ]
                                         },
                                         {
                                           "name": "bibref",
-                                          "value": ". Port-au-Prince,\n                      1865.",
+                                          "value": ". Port-au-Prince, 1865.",
                                           "children": [
                                             {
                                               "name": "emph",
@@ -5941,7 +5941,7 @@
                                           "children": [
                                             {
                                               "name": "p",
-                                              "value": "No doubt the estate has exerted a tremendous influence on the development\n                        of my character. One may walk for an hour without glimpsing another soul,\n                        which has taught me to love tranquility."
+                                              "value": "No doubt the estate has exerted a tremendous influence on the development of my character. One may walk for an hour without glimpsing another soul, which has taught me to love tranquility."
                                             }
                                           ]
                                         },
@@ -6027,7 +6027,7 @@
                                           "attr": {
                                             "source": "lcsh"
                                           },
-                                          "value": "Irish American women -- History -- 19th\n                      century."
+                                          "value": "Irish American women -- History -- 19th century."
                                         },
                                         {
                                           "name": "list",
@@ -6080,7 +6080,7 @@
                                           "attr": {
                                             "source": "lcsh"
                                           },
-                                          "value": "Irish American women -- History -- 19th\n                      century."
+                                          "value": "Irish American women -- History -- 19th century."
                                         }
                                       ]
                                     },
@@ -6138,7 +6138,7 @@
                                           "attr": {
                                             "source": "lcsh"
                                           },
-                                          "value": "Irish American women -- History -- 19th\n                      century."
+                                          "value": "Irish American women -- History -- 19th century."
                                         }
                                       ]
                                     },
@@ -6196,7 +6196,7 @@
                                           "attr": {
                                             "source": "lcsh"
                                           },
-                                          "value": "Irish American women -- History -- 19th\n                      century."
+                                          "value": "Irish American women -- History -- 19th century."
                                         }
                                       ]
                                     }
@@ -6246,7 +6246,7 @@
                                     },
                                     {
                                       "name": "p",
-                                      "value": "Level 6 This is the Physical Characteristics and Technical Requirements\n                    note."
+                                      "value": "Level 6 This is the Physical Characteristics and Technical Requirements note."
                                     }
                                   ]
                                 },
@@ -6333,7 +6333,7 @@
                                           "children": [
                                             {
                                               "name": "physloc",
-                                              "value": "Box\n                        152"
+                                              "value": "Box 152"
                                             }
                                           ]
                                         }
@@ -6390,7 +6390,7 @@
                                       "attr": {
                                         "source": "lcsh"
                                       },
-                                      "value": "Boston (Mass.) -- Intellectual life -- 20th\n                    century."
+                                      "value": "Boston (Mass.) -- Intellectual life -- 20th century."
                                     },
                                     {
                                       "name": "subject",
@@ -6633,7 +6633,7 @@
                           "children": [
                             {
                               "name": "bibref",
-                              "value": ". New York: Distributed Art\n                Publishers, 2002.",
+                              "value": ". New York: Distributed Art Publishers, 2002.",
                               "children": [
                                 {
                                   "name": "emph",
@@ -6648,7 +6648,7 @@
                         },
                         {
                           "name": "bibref",
-                          "value": ". New York: Distributed Art\n              Publishers, 2002.",
+                          "value": ". New York: Distributed Art Publishers, 2002.",
                           "children": [
                             {
                               "name": "emph",
@@ -6661,7 +6661,7 @@
                         },
                         {
                           "name": "bibref",
-                          "value": ". New York: Distributed Art\n              Publishers, 2002.",
+                          "value": ". New York: Distributed Art Publishers, 2002.",
                           "children": [
                             {
                               "name": "emph",
@@ -6674,7 +6674,7 @@
                         },
                         {
                           "name": "bibref",
-                          "value": ". New York: Distributed Art\n              Publishers, 2002.",
+                          "value": ". New York: Distributed Art Publishers, 2002.",
                           "children": [
                             {
                               "name": "emph",
